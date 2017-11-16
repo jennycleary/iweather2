@@ -2,7 +2,15 @@
   "name": "iweather",
   "app_id": "",
   "type": "ionic-angular",
-  "integrations": {
-    "cordova": {}
-  }
+  "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "https://api.wunderground.com/api"
+    },
+    {
+      "path": "/search",
+      "proxyUrl": "https://autocomplete.wunderground.com"
+    }
+   ],
+  "integrations": {}
 }
